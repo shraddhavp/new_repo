@@ -23,7 +23,7 @@ The system also allows the admin to login with his credentials. Admin can see th
 list and the links to the files that stores the candidate details that he can use for later purpose.
 
 
-# Advantages of the system
+# Advantages of the system✨
 
 The advantages of the existing system are:
 
@@ -35,7 +35,7 @@ predicting the personality of the person.
 which can be downloaded and filled if the resume that user has is not in the specified 
 format.
 
-# Technologies and tools used
+# Technologies and tools used📂
 * Tensorflow
 * Programming language -Python
 * Keras
