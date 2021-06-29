@@ -34,3 +34,9 @@ predicting the personality of the person.
 * It also has the word document of the resume template already embedded within it 
 which can be downloaded and filled if the resume that user has is not in the specified 
 format.
+
+# Technologies and tools used
+* Tensorflow
+* Programming language -Python
+* Keras
+* Anaconda(Running python environment)
