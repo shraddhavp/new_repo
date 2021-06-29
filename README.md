@@ -21,3 +21,16 @@ certification and work experience. The word describing the user’s behavior is 
 based on logistic regression algorithm.
 The system also allows the admin to login with his credentials. Admin can see the candidate 
 list and the links to the files that stores the candidate details that he can use for later purpose.
+
+
+# Advantages of the system
+
+The advantages of the existing system are:
+
+* The system predicts personality of the person along with the prediction of the skill 
+that the user is good at in the same system.
+* The system gives more accuracy almost 85% in the case of logistic regression in 
+predicting the personality of the person.
+* It also has the word document of the resume template already embedded within it 
+which can be downloaded and filled if the resume that user has is not in the specified 
+format.
