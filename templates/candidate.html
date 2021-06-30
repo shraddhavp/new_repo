@@ -1,0 +1,101 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>candidate</title>
+	<style>
+      #id1{
+    background-color: white; /* Green */
+      border: none;
+      color: white;
+    padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin-top:20px;
+      cursor: pointer;
+      border-radius: 50px;
+      width: 250px;
+    }
+
+input[type=text], select {
+  
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 60%;
+}
+input[type=file], select {
+  width: 40%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 15%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+label{
+	font-size: 20px;
+
+}
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+</style>
+</head>
+<body style="background-image: url('{% static 'images/aa.jpg'%}'); background-size: cover"><center>
+	<h1 style="font-size: 50px; color:white">Please Enter Required Details..!!</h1>
+  <div  class="transbox" id="header1-1" data-rv-view="4" style="width:45%; height: 30%;margin: auto;border: 5px solid #fff;">
+
+    <form method="post" enctype = "multipart/form-data"><br/><br/>
+      {% csrf_token %}
+      <font size ='5' ><b>NAME:<input type ="text" name ="name" pattern="[a-zA-Z ]{2,}" required><br/>
+        AGE:<input type ="text" name ="age" pattern="[0-9]{2,3}"><br/>
+        CV FORMAT TO USE:<button><a href={% url "format" %}> CLICK HERE</a></button><br><br>
+        CV TEMPLATE DOWNLOAD: <a href='/media/templateresume.docx' download>RESUME TEMPLATE</a><br/><br>
+      UPLOAD YOU CV:<input type ="file" name ="document" required/><br/><br/>
+
+    
+      <button type = "submit" style="font-size:20px;">SUBMIT</button><br/><br/>
+    </form></b></font>
+    
+  </div>
+  <br/>
+    <div  class="transbox" style="width:45%; height: 30%;margin: auto;border: 5px solid #fff;">
+      <ul class= "messages">
+        <font size = '5' color = 'red'><b>
+        {% for message in messages %}
+        <li>
+          <div class = "alert-success">{{ message }}</div>
+        </li>
+        {% endfor %}
+      </ul>
+    </font></b>
+    </div>
+
+    <button id="id1" style="margin-left: 20px" ><a href = {% url "test" %} >TAKE TEST</a></button>
+</body>
+</html>

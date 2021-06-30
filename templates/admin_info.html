@@ -1,0 +1,27 @@
+<html>
+<head>
+	<style>
+		#id1{
+		background-color: lightgrey; /* Green */
+ 	    border: none;
+  		color: #39393;
+ 	 	padding: 10px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 15px;
+  		margin-top:10px;
+  		cursor: pointer;
+  		border-radius: 50px;
+  		width: 100px;
+  		margin-left:50px;
+		}
+</style>
+</head>
+{% load static %}
+<body style="background-image: url('{% static 'images/personality.jpg'%}'); background-size: cover">
+	<h1 style="color:white">WELCOME ADMIN,</h1><br><br>
+	<h1><a href={% url "candidate_info" %} style="color:white">VIEW CANDIDATE RESULTS</a></h1>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<button id="id1"><a href={% url "index"%} style="color:#39393">LOGOUT</a></button>
+</html>

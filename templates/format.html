@@ -1,0 +1,23 @@
+{% load static%}
+<html>
+<head>
+	<style>
+		img
+		{
+			align:center;
+			margin-left:400px;
+			border: 1px solid black;
+
+		}
+	</style>
+</head>
+<body>
+<h1><b><u><center>FORMAT FOR THE CV UPLOAD</center></u></b></h1>
+
+
+<img src="{% static 'images/resume.png'%}" width = "550" height = "600">
+<br>
+<a class ="xyz" href = {% url "candidate" %} style="color:red">BACK</a>
+<br>
+</body>
+</html>

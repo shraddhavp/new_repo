@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en-ca">
+<head>
+	<meta charset="utf-8">
+	<title>Questionare</title>
+		<style>
+		input[type=submit] {
+		  width: 15%;
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 14px 20px;
+		  margin: 8px 0;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+	</style>
+</head>
+<body style="background-image: url('{% static 'images/t1.gif'%}');background-size: cover">
+
+
+<center>
+	<font size="6"><h1>BIG FIVE PERSONALITY TEST</h1></font>
+	
+	<form method = "post">
+		{% csrf_token %}
+	<div style = "background-image: url('{% static 'images/t2.jpg'%}');background-size: cover;width:60%; height:90%; margin: auto; border: 5px solid #2E2E2E;"></br>
+	<font size="4">
+	<fieldset>
+
+		<legend> Do you like to meet new people?</legend>
+		<input  id = "Agree"type="radio"name="a1"value=2>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="a1"value=1>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="a1"value=0>
+		<label for="Disagree">Disagree</label>
+
+	</fieldset>
+
+	</br></br>
+
+	<fieldset>
+		<legend> Do you get excited by new ideas?</legend>
+		<input  id = "Agree"type="radio"name="a2"value=2>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="a2"value=1>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="a2"value=0>
+		<label for="Disagree">Disagree</label>
+
+
+	</fieldset>
+	</br></br>
+	<fieldset>
+		<legend> Are you open to new Experiences?</legend>
+		<input  id = "Agree"type="radio"name="a3"value=2>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="a3"value=1>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="a3"value=0>
+		<label for="Disagree">Disagree</label>
+
+
+	</fieldset>
+	</br></br>
+
+	<fieldset>
+		<legend> Do you enjoy thinking about things?</legend>
+		<input  id = "Agree"type="radio"name="a4"value=2>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="a4"value=1>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="a4"value=0>
+		<label for="Disagree">Disagree</label>
+
+
+	</fieldset>
+	</br></br>
+
+	<fieldset>
+		<legend> Do you complete your task succesfully?</legend>
+		<input  id = "Agree"type="radio"name="b1"value=2>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="b1"value=1>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="b1"value=0>
+		<label for="Disagree">Disagree</label>
+
+
+	</fieldset>
+	</br></br>
+
+	<fieldset>
+		<legend> Do you waste your time?</legend>
+		<input  id = "Agree"type="radio"name="b2"value=0>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="b2"value=1>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="b2"value=2>
+		<label for="Disagree">Disagree</label>
+
+
+	</fieldset>
+	</br></br>
+
+	<fieldset>
+		<legend> Will you make plans and stick to them?</legend>
+		<input  id = "Agree"type="radio"name="b3"value=1>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="b3"value=2>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="b3"value=0>
+		<label for="Disagree">Disagree</label>
+
+
+	</fieldset>
+	</br></br>
+
+	<fieldset>
+		<legend> Do you know how to get things done?</legend>
+		<input  id = "Agree"type="radio"name="b4"value=2>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="b4"value=1>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="b4"value=0>
+		<label for="Disagree">Disagree</label>
+
+
+	</fieldset>
+	</br></br>
+
+
+	<fieldset>
+		<legend> Can you make friends easily?</legend>
+		<input  id = "Agree"type="radio"name="c1"value=2>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="c1"value=1>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="c1"value=0>
+		<label for="Disagree">Disagree</label>
+
+
+	</fieldset>
+	</br></br>
+
+	<fieldset>
+		<legend> Are you skilled in handling social situations?</legend>
+		<input  id = "Agree"type="radio"name="c2"value=2>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="c2"value=1>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="c2"value=0>
+		<label for="Disagree">Disagree</label>
+
+
+	</fieldset>
+	</br></br>
+
+	<fieldset>
+		<legend> Are you talkative?</legend>
+		<input  id = "Agree"type="radio"name="c3"value=2>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="c3"value=1>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="c3"value=0>
+		<label for="Disagree">Disagree</label>
+
+
+	</fieldset>
+	</br></br>
+
+	<fieldset>
+		<legend> Do you feel comfortable around people?</legend>
+		<input  id = "Agree"type="radio"name="c4"value=2>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="c4"value=1>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="c4"value=0>
+		<label for="Disagree">Disagree</label>
+
+
+	</fieldset>
+	</br></br>
+
+
+	<fieldset>
+		<legend> Do you accept people as they are?</legend>
+		<input  id = "Agree"type="radio"name="d1"value=2>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="d1"value=1>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="d1"value=0>
+		<label for="Disagree">Disagree</label>
+
+
+	</fieldset>
+	</br></br>
+
+	<fieldset>
+		<legend> Do you get sympathize with other's feelings?</legend>
+		<input  id = "Agree"type="radio"name="d2"value=2>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="d2"value=1>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="d2"value=0>
+		<label for="Disagree">Disagree</label>
+
+
+	</fieldset>
+	</br></br>
+
+	<fieldset>
+		<legend> Do you contradict with others?</legend>
+		<input  id = "Agree"type="radio"name="d3"value=1>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="d3"value=2>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="d3"value=0>
+		<label for="Disagree">Disagree</label>
+
+
+	</fieldset>
+	</br></br>
+
+	<fieldset>
+		<legend> Do you use others for your own ends?</legend>
+		<input  id = "Agree"type="radio"name="d4"value=1>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="d4"value=2>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="d4"value=0>
+		<label for="Disagree">Disagree</label>
+
+
+	</fieldset>
+	</br></br>
+
+
+	<fieldset>
+		<legend> Do you have frequent mood swings?</legend>
+		<input  id = "Agree"type="radio"name="e1"value=2>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="e1"value=1>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="e1"value=0>
+		<label for="Disagree">Disagree</label>
+
+
+	</fieldset>
+	</br></br>
+
+	<fieldset>
+		<legend> Do you remain calm under pressure?</legend>
+		<input  id = "Agree"type="radio"name="e2"value=2>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="e2"value=1>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="e2"value=0>
+		<label for="Disagree">Disagree</label>
+
+
+	</fieldset>
+	</br></br>
+
+	<fieldset>
+		<legend> Do you feel panic esily?</legend>
+		<input  id = "Agree"type="radio"name="e3"value=1>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="e3"value=2>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="e3"value=0>
+		<label for="Disagree">Disagree</label>
+
+
+	</fieldset>
+	</br></br>
+
+	<fieldset>
+		<legend> Do you get irritated frequently?</legend>
+		<input  id = "Agree"type="radio"name="e4"value=0>
+		<label for="Agree">Agree</label>
+
+		<input id="Neutral" type="radio"name="e4"value=1>
+		<label for="Neutral">Neutral</label>
+
+		<input id="Disagree" type="radio"name="e4"value=2>
+		<label for="Disagree">Disagree</label>
+
+
+	</fieldset>
+	</br>
+	<input type= "submit" value= "SUBMIT"></br></br>
+	</font>
+</div>
+</center>
+</form>
+</body>
+</html>

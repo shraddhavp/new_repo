@@ -1,0 +1,32 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Results</title>
+</head>
+	<body style="background-image: url('{% static 'images/back.jpg'%}');background-size: cover;">
+		<font size ="5">
+<a class ="xyz" href = "/" style="color: black">HOME</a>
+<center><h1>| YOUR PERSONALITY RESULTS |</h1>
+<section style="width:75%;height:90%;margin: auto;border: 5px solid #fff ;">
+<img src="{% static 'images/big5.png'%}" alt="asdfg" width = "550" height = " 480" align="right"><br/>
+<b>Openness:</b> {{ Openness | safe }} %<br/>
+
+<b>Conscientiousness:  </b>{{ Conscientiousness | safe }} % <br/>
+
+<b>Extraversion:  </b>{{ Extraversion | safe }} %<br/>
+     
+<b>Aggreeableness:  </b>{{ Aggreeableness | safe }} %<br/>     
+    
+<b>Neuroticism:  </b>{{ Neuroticism | safe }} % <br/>
+
+<b>-------------------------------</b><br/>
+
+<b>As per your CV, you are good in:{{ tfmax | safe}}<br/><br/>
+
+<b>Your Personality is:</b> {{ y_pred }} <br/> </font>
+
+</section>
+</center>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personality Prediction System</title>
+
+	<style>
+		#id1{
+		background-color: grey; /* Green */
+ 	    border: none;
+  		color: white;
+ 	 	padding: 20px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 25px;
+  		margin-top:150px;
+  		cursor: pointer;
+  		border-radius: 50px;
+  		width: 250px;
+		}
+
+
+	</style>
+</head>
+
+
+<body style="background-image: url('{% static 'images/index.gif'%}');background-size: cover"><center>
+<h1 style="font-size: 70px;color: white;">Personality Prediction System</h1>
+
+
+
+<button id="id1" style=" " ><a href={% url "candidate"%} style="color:white">USER</a></button>
+<button id="id1" style="margin-left:250px;" ><a href={% url "admin_page"%} style="color:white">ADMIN</a></button>
+</center>
+</body>
+</html>
