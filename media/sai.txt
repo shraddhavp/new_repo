@@ -1,0 +1,10 @@
+Name : Sai
+Age : 23
+Mobile : 1234567890
+Address : Bangalore
+Technical Skills: Python, Java
+Work History: Java developer, ML in Python
+Certifications: Java, R
+Projects: Python
+Candidate is good in: Python
+Personality is: ['serious']

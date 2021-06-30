@@ -1,0 +1,10 @@
+Name : 
+Age : 
+Mobile : 
+Address : 
+Technical Skills: 
+Work History: 
+Certifications: 
+Projects: 
+Candidate is good in: 
+Personality is: ['serious']

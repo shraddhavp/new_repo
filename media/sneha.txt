@@ -1,0 +1,10 @@
+Name : Sneha
+Age : 22
+Mobile : 78812345670
+Address : Bangalore
+Technical Skills: C++
+Work History: Python
+Certifications: Java
+Projects: C
+Candidate is good in: C++
+Personality is: ['extraverted']

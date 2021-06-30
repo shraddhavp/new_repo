@@ -1,0 +1,10 @@
+Name : Ajith
+Age : 28
+Mobile : 908877123
+Address : Bangalore
+Technical Skills: C,C++
+Work History: Java, C++
+Certifications: C++, Python,Java
+Projects: Java
+Candidate is good in: Java
+Personality is: ['responsible']

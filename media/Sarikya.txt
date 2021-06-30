@@ -1,0 +1,10 @@
+Name : Sarikya S M
+Age : 21
+Mobile : 8799112123
+Address : Bangalore
+Technical Skills: Java,R
+Work History: Python
+Certifications: Python, Java
+Projects: Python
+Candidate is good in: Python
+Personality is: ['extraverted']

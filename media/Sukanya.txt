@@ -1,0 +1,10 @@
+Name : Sukanya
+Age : 25
+Mobile : 8790812890
+Address : Bangalore
+Technical Skills: Java,R
+Work History: Python, C++
+Certifications: C++, Java
+Projects: C++
+Candidate is good in: C++
+Personality is: ['extraverted']
